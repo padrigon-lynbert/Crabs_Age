@@ -1,0 +1,5 @@
+# .gitignore
+catboost_info
+CrabAgePrediction.csv
+connections.py
+__pycache__
