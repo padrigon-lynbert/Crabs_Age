@@ -12,9 +12,11 @@ from connections import get_df
 
 # collection
 df = get_df()
-df['Sex'] = df['Sex'].map({'F':2, 'M':1, 'I':0})
 
 # cleaning
+df['Sex'] = df['Sex'].map({'F':2, 'M':1, 'I':0})
+
+# splitting
 X = df.drop('Age', axis=1)
 y = df['Age']
 
